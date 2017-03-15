@@ -1,0 +1,44 @@
+[
+  {
+    "id": "0",
+    "imageUrl": "http://pic.ghs.net/public/images/e4/09/04/b6df41f4d73ef5034aabaeb735fbd5359945e5fd.jpg",
+    "title": "技术类",
+    "description": "国内顶尖的技术团队"
+  },
+  {
+    "id": "1",
+    "imageUrl": "http://pic.ghs.net/public/images/a8/76/50/d3002c10c0230a2bfdace55580b86acd7e6229b0.jpg",
+    "title": "产品类",
+    "description": "工匠精神专注打造好产品"
+  },
+  {
+    "id": "2",
+    "imageUrl": "http://pic.ghs.net/public/images/b1/5b/a3/25327fc3acd8f75c08b14cb3b73e0cf135de721f.jpg",
+    "title": "设计类",
+    "description": "在这里展示你天马行空的想法"
+  },
+  {
+    "id": "3",
+    "imageUrl": "http://pic.ghs.net/public/images/58/cb/60/80281a53c8c5c57546deb378faeddd7d43830541.jpg",
+    "title": "市场类",
+    "description": "开疆扩土需要骁勇善战的你"
+  },
+  {
+    "id": "4",
+    "imageUrl": "http://pic.ghs.net/public/images/ce/47/23/b105e9384964e164a91e9bb2d35d230804432caf.jpg",
+    "title": "职能类",
+    "description": "平凡的事做好极致就是不平凡"
+  },
+  {
+    "id": "5",
+    "imageUrl": "http://pic.ghs.net/public/images/c2/8b/b6/d63354546244f2ab2dfb85cb7e442ca0e87bea00.jpg",
+    "title": "物流类",
+    "description": "想成为一个风一样的骑士么"
+  },
+  {
+    "id": "6",
+    "imageUrl": "http://pic.ghs.net/public/images/a2/4f/07/68449a7f3eeddb026c079aa84cdc637f4c5874e4.jpg",
+    "title": "客服类",
+    "description": "拥有甜美声线的你还在等什么"
+  }
+]

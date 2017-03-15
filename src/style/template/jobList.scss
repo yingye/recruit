@@ -1,0 +1,57 @@
+.joblist_wrapper{
+	height: 100%;
+  overflow: auto;
+}
+.joblist{
+  padding-top: 145px;
+}
+.joblist_item{
+	height: 73px;
+	padding: 17px 15px 15px;
+	border-bottom: 1px solid #eee;
+	box-sizing: border-box;
+	&>p{
+		display: inline-block;
+		line-height: 1.1;
+	}
+}
+.joblist_name{
+	font-size: 18px;
+  color: #333;
+  width: 85%;
+}
+.joblist_title{
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 85%;
+}
+.joblist_hot{
+	background-color: #ff7e00;
+  color: #fff;
+  border-radius: 2px;
+  font-size: 12px;
+  vertical-align: middle;
+  line-height: 1;
+  padding: 1px 2px 0;
+}
+.joblist_city{
+	float: right;
+  font-size: 15px;
+  color: #333;
+}
+.joblist_addition{
+	margin-top: 9px;
+  width: 100%;
+  font-size: 12px;
+  color: #666;
+}
+.joblist_headcount{
+	padding-right: 8px;
+  border-right: 1px solid #eee;
+}
+.joblist_time{
+	padding-left: 8px;
+}

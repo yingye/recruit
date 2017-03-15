@@ -1,0 +1,10 @@
+<div class="category_wrapper">
+	<ul class="category">
+		<li ui-sref="job({'type':'0','position':'{{$index}}'})" class="category_item" ng-style="{'background-image':'url({{item.imageUrl}})'}" ng-repeat="item in category">
+		{{$index}}
+			<div class="category_mask"></div>
+			<p class="category_title" ng-bind="item.title"></p>
+			<p class="category_description" ng-bind="item.description"></p>
+		</li>
+	</ul>
+</div>

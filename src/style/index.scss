@@ -1,0 +1,17 @@
+@import 'mixin.scss';
+@import 'template/head.scss';
+@import 'template/search.scss';
+@import 'template/category.scss';
+@import 'template/menu.scss';
+@import 'template/jobList.scss';
+@import 'template/jobFilter.scss';
+
+
+body{
+	font-family: Helvetica Neue,Microsoft Yahei,sans-serif;
+	height: 100vh;
+}
+.view{
+	height: 100%;
+	overflow: hidden;
+}
