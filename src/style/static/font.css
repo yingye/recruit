@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'recruit-icon';
-  src:  url('../fonts/recruit-icon.eot?sgmrfh');
-  src:  url('../fonts/recruit-icon.eot?sgmrfh#iefix') format('embedded-opentype'),
-    url('../fonts/recruit-icon.ttf?sgmrfh') format('truetype'),
-    url('../fonts/recruit-icon.woff?sgmrfh') format('woff'),
-    url('../fonts/recruit-icon.svg?sgmrfh#recruit-icon') format('svg');
+  src:  url('../fonts/recruit-icon.eot?w7kz8y');
+  src:  url('../fonts/recruit-icon.eot?w7kz8y#iefix') format('embedded-opentype'),
+  url('../fonts/recruit-icon.ttf?w7kz8y') format('truetype'),
+  url('../fonts/recruit-icon.woff?w7kz8y') format('woff'),
+  url('../fonts/recruit-icon.svg?w7kz8y#recruit-icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,17 +27,8 @@
 .icon-arrow_lift:before {
   content: "\e901";
 }
-.icon-home:before {
-  content: "\e900";
-}
 .icon-search:before {
   content: "\e986";
-}
-.icon-lock:before {
-  content: "\e98f";
-}
-.icon-unlocked:before {
-  content: "\e990";
 }
 .icon-star-empty:before {
   content: "\e9d7";
@@ -48,10 +39,6 @@
 .icon-star-full:before {
   content: "\e9d9";
 }
-.icon-evil:before {
-  content: "\e9ef";
+.icon-share2:before {
+  content: "\ea82";
 }
-.icon-evil2:before {
-  content: "\e9f0";
-}
-

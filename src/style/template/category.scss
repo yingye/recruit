@@ -1,6 +1,8 @@
 .category_wrapper{
 	height: 100%;
-	overflow: auto;
+	overflow-y: auto;
+  -webkit-overflow-scrolling:touch;
+  position: relative;
 	&>.category{
 	  padding-top: 106px;
 	  background-color: #dddddd;

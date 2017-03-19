@@ -1,0 +1,11 @@
+<div class="job_detail_title">
+  <h1 ng-bind="jobDetail.name"></h1>
+  <div class="tips">
+    <span ng-bind="'部门：'+jobDetail.name"></span>
+    <span ng-bind="'城市：'+jobDetail.city"></span>
+    <span ng-bind="'人数：'+jobDetail.headcount"></span>
+    <span ng-bind="'公司：'+jobDetail.department"></span>
+    <span ng-bind="'类别：'+jobDetail.category"></span>
+    <span ng-bind="'发布：'+jobDetail.meta.createAt|limitTo:13"></span>
+  </div>
+</div>

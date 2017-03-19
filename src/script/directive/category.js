@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('recruitApp').directive('recruitAppCategory', [function(){
+angular.module('recruitApp').directive('recruitAppCategory', [function () {
   return {
     restrict: 'A',
     replace: true,

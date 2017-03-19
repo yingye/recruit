@@ -1,6 +1,7 @@
 .joblist_wrapper{
 	height: 100%;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .joblist{
   padding-top: 145px;

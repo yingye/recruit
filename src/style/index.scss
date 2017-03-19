@@ -1,10 +1,14 @@
 @import 'mixin.scss';
 @import 'template/head.scss';
+@import 'template/foot.scss';
 @import 'template/search.scss';
 @import 'template/category.scss';
 @import 'template/menu.scss';
 @import 'template/jobList.scss';
 @import 'template/jobFilter.scss';
+@import 'template/jobDetail.scss';
+@import 'template/jobDetailTitle.scss';
+@import 'template/JobDetailDescription.scss';
 
 
 body{

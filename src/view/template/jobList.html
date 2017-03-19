@@ -1,6 +1,6 @@
 <div class="joblist_wrapper">
-	<ul class="joblist"> 
-		<li class="joblist_item" ng-repeat="job in jobs">
+	<ul class="joblist">
+		<li ui-sref="jobDetail({'id':job._id})" class="joblist_item" ng-repeat="job in jobs">
   		<p class="joblist_name">
   			<span class="joblist_title" ng-bind="job.name"></span>
   			<span ng-if="job.hot" class="joblist_hot">HOT</span>
