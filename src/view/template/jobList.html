@@ -1,15 +1,28 @@
 <div class="joblist_wrapper">
-	<ul class="joblist">
-		<li ui-sref="jobDetail({'id':job._id})" class="joblist_item" ng-repeat="job in jobs">
-  		<p class="joblist_name">
-  			<span class="joblist_title" ng-bind="job.name"></span>
-  			<span ng-if="job.hot" class="joblist_hot">HOT</span>
-  		</p>
-  		<p class="joblist_city" ng-bind="job.city"></p>
-  		<p class="joblist_addition">
-  	<span class="joblist_headcount" ng-bind="job.headcount+'人'"></span>
-  	<span class="joblist_time" ng-bind="'发布时间: '+job.meta.updateAt|limitTo:16"></span>
-  		</p>
-  	</li>
+  <ul class="joblist">
+    <li ui-sref="jobDetail({'id':job._id})" class="joblist_item"
+        ng-repeat="job in jobs|filter:search|filterByObj:filterObj|orderByAttr:{'hot':true}">
+      <p class="joblist_name">
+        <span class="joblist_title" ng-bind="job.name"></span>
+        <span ng-if="job.hot" class="joblist_hot">HOT</span>
+      </p>
+      <p class="joblist_city" ng-bind="job.city"></p>
+      <p class="joblist_addition">
+        <span class="joblist_headcount" ng-bind="job.headcount+'人'"></span>
+        <span class="joblist_time" ng-bind="'发布时间: '+job.meta.updateAt|limitTo:16"></span>
+      </p>
+    </li>
   </ul>
+  <div class="joblist_void" ng-show="(jobs|filter:search|filterByObj:filterObj).length===0">
+    <p class="void_note">没有找到相应的岗位哦！</p>
+    <p class="void_title">当前热招</p>
+    <div class="joblist_item" ng-repeat="job in jobs|filterByObj:{'hot':true}">
+      <p class="joblist_name" ng-bind="job.name"></p>
+      <p class="joblist_city" ng-bind="job.city"></p>
+      <p class="joblist_addition">
+        <span class="joblist_headcount" ng-bind="job.headcount+'人'"></span>
+        <span class="joblist_time" ng-bind="'发布时间: '+job.meta.updateAt|limitTo:16"></span>
+      </p>
+    </div>
+  </div>
 </div>

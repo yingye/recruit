@@ -56,3 +56,23 @@
 .joblist_time{
 	padding-left: 8px;
 }
+.joblist_void{
+  >.void_note{
+    height: 67px;
+    line-height: 67px;
+    text-align: center;
+    color: $ghsPurple;
+    font-size: 18px;
+    background-color: #fff;
+  }
+  >.void_title{
+    height: 35px;
+    line-height: 35px;
+    padding-left: 15px;
+    background-color: #eee;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+  }
+}
+

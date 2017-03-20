@@ -6,7 +6,7 @@ angular.module('recruitApp').config(['$stateProvider','$urlRouterProvider',funct
 		templateUrl: 'view/main.html',
 		controller: 'mainCtrl'
 	}).state('job', {
-		url: '/job/:type/:position',
+		url: '/job/:type',
 		templateUrl: 'view/job.html',
 		controller: 'jobCtrl'
 	}).state('jobDetail', {

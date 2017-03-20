@@ -1,41 +1,39 @@
 <div class="jobfilter">
-  <div ng-class="{'active':locationDisplay}" class="jobfilter_key location_key" ng-click="locationDisplay=!locationDisplay;positionDisplay=false;typeDisplay=false">
-  	<span ng-bind="location?location:'全国'"></span>
+  <div ng-class="{'active':locationDisplay}" class="jobfilter_key location_key"
+       ng-click="locationDisplay=!locationDisplay;positionDisplay=false;typeDisplay=false">
+    <span ng-bind="location"></span>
   </div>
-  <div ng-class="{'active':positionDisplay}" class="jobfilter_key position_key" ng-click="positionDisplay=!positionDisplay;locationDisplay=false;typeDisplay=false">
-  	<span ng-bind="position?position:'职位类别'"></span>
+  <div ng-class="{'active':positionDisplay}" class="jobfilter_key position_key"
+       ng-click="positionDisplay=!positionDisplay;locationDisplay=false;typeDisplay=false">
+    <span ng-bind="position?position:'职位类别'"></span>
   </div>
-  <div ng-class="{'active':typeDisplay}" class="jobfilter_key type_key" ng-click="typeDisplay=!typeDisplay;locationDisplay=false;positionDisplay=false">
-  	<span ng-bind="type?type:'社会招聘'"></span>
+  <div ng-class="{'active':typeDisplay}" class="jobfilter_key type_key"
+       ng-click="typeDisplay=!typeDisplay;locationDisplay=false;positionDisplay=false">
+    <span ng-bind="type"></span>
   </div>
   <div class="jobfilter_popup location_popup" ng-if="locationDisplay">
-  	<div class="jobfilter_category">
-  		<p>全国</p>
-  		<p>北京</p>
-  		<p>南京</p>
-  	</div>
+    <div class="jobfilter_category">
+      <p ng-repeat="item in locationList" ng-class="{'active':isEqual(item.title,location)}" ng-bind="item.title"
+         ng-click="selectLocationFun($index)"></p>
+    </div>
   </div>
-  <div class="jobfilter-popup position-popup" ng-if="positionDisplay">
-  	<div class="jobfilter-category">
-  		<p>技术类</p>
-  		<p>产品类</p>
-  		<p>设计类</p>
-  		<p>市场类</p>
-  		<p>职能类</p>
-  		<p>物流类</p>
-  		<p>客服类</p>
-  	</div>
-  	<div class="jobfilter-list">
-  		<ul>
-  			<li></li>
-  		</ul>
-  	</div>
+  <div class="jobfilter_popup position_popup" ng-if="positionDisplay">
+    <div class="jobfilter_category">
+      <p ng-repeat="item in positionList" ng-bind="item.title"
+         ng-class="{'active':isEqual(item.title,positionSort.title)}" ng-click="setPositionSort($index);"></p>
+    </div>
+    <div class="jobfilter_list">
+      <ul>
+        <li ng-repeat="item in positionSort.content" ng-bind="item.title" ng-click="setPosition(item)"
+            ng-class="{'active':isEqual(item.title,position)}"></li>
+      </ul>
+    </div>
   </div>
   <div class="jobfilter_popup type_popup" ng-if="typeDisplay">
-  	<div class="jobfilter_category">
-  		<p>社会招聘</p>
-  		<p>实习生招聘</p>
-  	</div>
+    <div class="jobfilter_category">
+      <p ng-repeat="item in typeList" ng-class="{'active':isEqual(item.title,type)}" ng-bind="item.title"
+         ng-click="selectTypeFun($index)"></p>
+    </div>
   </div>
   <div class="jobfilter_mask" ng-show="locationDisplay||positionDisplay||typeDisplay"></div>
 </div>
